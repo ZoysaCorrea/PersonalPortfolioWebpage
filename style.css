@@ -1,0 +1,158 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+}
+
+#navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    z-index: 20;
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    transition: top 0.3s;
+}
+
+#nav-ul{
+    display: flex;
+    justify-content: flex-end;  
+    margin-right: 50px;
+    margin: 0 auto;
+}
+
+.nav-links{
+    list-style-type: none; 
+    padding-right: 40px;
+    font-size: 20px;
+    padding: 25px;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-links:hover{
+    background-color: #db4d60;
+    transition: 0.2s;
+}
+
+.nav-a{
+    text-decoration: 0px;
+    color: #ff6277;
+}
+
+.nav-a:hover{
+    color: white;
+}
+
+
+#welcome-section{
+    justify-content: center;
+    display: flex;
+    background-color: tomato;
+    width: 100%;
+    height: 25em;
+    display: grid;
+    align-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#welcome-section{
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+}
+
+.projects-section-header{
+    color: tomato;
+    text-align: center;
+    font-size: 35px;
+    margin: 30px auto 10px auto;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 5px solid tomato;
+    width: 100%;
+}
+
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 40px;
+}
+
+.project{
+    object-fit: cover;
+    width: 100%;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+.project:hover{
+    opacity: 0.9;  
+}
+
+a{
+    text-decoration: none;
+}
+
+.project-title{
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+.project-link{
+    border: 3px solid rgb(54, 54, 54);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#portfolio{
+    display: flex;
+    background-color: rgb(163, 253, 136);
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2.0;
+    height: 200px;
+    color: rgb(39, 54, 54);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -12px 20px 0px;
+}
+
+#profile-link{
+    color: tomato;
+}
+
+.lets-work-together{
+    font-size: 30px;
+}
+
+.warning-msg{
+    color: rgb(195, 116, 102);
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
